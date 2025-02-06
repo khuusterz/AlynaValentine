@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oops!</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #fce4ec;
+            color: #c2185b;
+        }
+        h1 {
+            font-size: 36px;
+            margin-top: 50px;
+        }
+        button {
+            padding: 15px 25px;
+            margin: 10px;
+            font-size: 18px;
+            background-color: #c2185b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #d81b60;
+        }
+        .gif {
+            width: 600px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>You are such a butter fingers haha. Theres no way you pressed no😢</h1>
+    <!-- Add a sad or cute GIF here -->
+    <img class="gif" src="https://media.giphy.com/media/ZyNQFqZLFUhr2/giphy.gif?cid=790b7611d8fai7zfump8ahnouf6urubse69ln01yn3ww92j7&ep=v1_gifs_search&rid=giphy.gif&ct=g" alt="Sad gif">
+
+    <p>Pweeeese be my Valentine? 💖</p>
+
+    <!-- Button Options -->
+    <button onclick="yesResponse()">Yes</button>
+    <button onclick="noResponse(2)">No</button>
+
+    <script>
+        function yesResponse() {
+            window.location.href = 'Yes.html';  // Redirect to the "Yes" page
+        }
+
+        function noResponse(noCount) {
+            if (noCount === 2) {
+                window.location.href = 'no3.5.html';  // Redirect to no2.html if second "No"
+            } else if (noCount === 3) {
+                window.location.href = 'no3.5.html';  // Redirect to no3.html if third "No"
+            } else {
+                window.location.href = 'Yes.html';  // After 4 "No"s, go to the "Yes" page
+            }
+        }
+    </script>
+</body>
+</html>
